@@ -8,12 +8,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundamentals of HTML & CSS</title>
+    <!--Three Methods to CSS 
+    1.Inline CSS
+    2.Internal CSS
+    3.External CSS-->
+    <link rel = "stylesheet" href = "Basic_CSS.css">  <!--This is External CSS.-->
+    <style>
+      body{
+            background-color: #94c6ff;
+        }
+    </style>
+    <!--This is Internal CSS.-->
 </head>
 <body>
 <!--Concept No 2.-->
 <!--Tags-->
 <!--Headings-->
-<h1>Heading 1</h1>
+<h1 style = "color:rgb(0, 0, 26);">Heading 1</h1> <!--This is Inline CSS-->
 <h2>Heading 2</h2>
 <h3>Heading 3</h3>
 <h4>Heading 4</h4>
@@ -33,7 +44,7 @@
 <!--li is list-->
 <!--In ul tag, we also give style property, however it is default by bullets(disc) and it may be square and circle-->
 <!--But when we develop websites at some advance, we use none as list-style-->
-<ul style = "list-style: square;">
+<ul style = "list-style: circle--;">
 <!--This Style Method is Called Inline CSS-->
 <li>Front-end Basics</li>
 <li>HTML</li>
@@ -51,13 +62,16 @@
 <!--div tag is division tag or it used as container for HTML Elements.-->
 <!--class or id is used for CSS Purposes.-->
 <!--A Class name can be used by multiple HTML elements, while an ID name must only be used by one HTML element within the page.-->
-<div class = "div1">
+<div class = "flex-container">
+<!--To Understand Flexbox we create the flex-container class.-->
+<div id = "flex-item1">
 <!--img tag is used for image-->
-<img src = "https://www.hp.com/us-en/shop/app/assets/images/uploads/prod/5%20Best%20Coding%20Programs%20for%20Aspiring%20Programmers1650304687858345.jpg" alt = "">
+<img src ="Images/html-css.png" alt = "#">
 </div>
-<div id = "div2">
+<div id = "flex-item2">
 <!--iframe tag is used as inline frame that is used to embed another html document in another html Document page.-->
-<iframe width="560" height="315" src="https://www.youtube.com/embed/e18DnF1kK0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="500" height="300" src="https://www.youtube.com/embed/1il__9vPE5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 </div>
 </body>
 </html>

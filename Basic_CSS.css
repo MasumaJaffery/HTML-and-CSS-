@@ -1,0 +1,24 @@
+*{
+    /* margin: 0px;
+       padding: 0px; */
+    box-sizing: border-box;
+}
+/*box-sizing is a property that used to include total width or height of every element.*/
+.flex-container{
+    background-color: Darkblue;
+    height: 60vh;
+    display: flex;
+/*By Default Flexbox Direction is Horizontal*/
+   align-items: center;
+/*align-items is property that is used to arrange items Vertically in center. */
+   justify-content: center;
+/*justify-content is property that is used to arrange items Horizontally in center. */
+/*flex-wrap: wrap; This property is best for Mobiles Media Queries it maintains height and width of items. 
+flex-flow is combination of 2 properties (flex-direction + flex-wrap) like flex-flow: (column,wrap)*/
+}
+#flex-item1{
+/* order: 2; */
+/* Order property is used to sort items, likewise 4 comes before 5. :D */
+ position: relative;
+ right: 80px;
+}
