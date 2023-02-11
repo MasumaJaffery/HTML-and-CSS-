@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        #container{
+           background-color: rgb(1, 77, 51);
+        }
+        .box{
+            width: 250px;
+            height: 250px;
+            background-color: aquamarine;
+            text-align: center;
+            animation-name: M;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: alternate;
+            animation-timing-function: ease;
+            position: relative;
+            /* animation is short-hand property like that;
+             animation: animation-name, animation-duration, animation-timing-function, animation-dalay,
+             animation-iteration-count,animation-fill-mode; 
+             like;
+             animation: M, 2s, ease, 2s, infinite, alternate;
+             alernate is about move forward. */
+            
+        }
+        /*Two Methods to Create Animations by @keyframe (identifier){} */
+        /* @keyframes M {
+            from{
+               width: 200px;
+            }
+            to{
+              width: 800px;
+            }
+        } */
+        @keyframes M {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            75%{
+                 top: 250px;
+                 left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 250px;
+            }
+        }
+        </style>
+</head>
+<body>
+<div id = "container">
+<div class = "box">Animation</div>
+
+</div>  
+</body>
+</html>
