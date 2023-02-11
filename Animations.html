@@ -14,6 +14,7 @@
         #container{
            background-color: rgb(1, 77, 51);
         }
+        /* Animations */
         .box{
             width: 250px;
             height: 250px;
@@ -60,6 +61,7 @@
                 left: 250px;
             }
         }
+        /* Transformations */
         .box2{
             height: 250px;
             width: 250px;
@@ -70,6 +72,7 @@
             text-align: center;
             cursor: pointer;
             transition: all 0.5s ease;
+            position: relative;
             margin-left: 500px;
 
         }
@@ -81,12 +84,37 @@
             transform: translateY(123px);*/
             /*transform shorthand property for transform: translate(X,Y); */
         }
+        /* Transitions */
+        .box3{
+            height: 250px;
+            width: 250px;
+            background-color: #8fffff;
+            text-align: center;
+            position: relative;
+            margin-left: 800px;
+            margin-top: -250px;
+            transition-property: background-color;
+            transition-duration: 2s;
+            transition-delay: 1s;
+            transition-timing-function: ease-in-out;
+            /* transition shorthand property
+            transition: transition-property, transition-duration, transition-timing-function,transition-delay
+            like transistion: background, 2s, ease-in-out, 1s; */
+            /* In transistion property we can also write (all) means complete property of transition */
+            cursor: pointer;
+        }
+        .box3:hover{
+            background-color: #16cefc;
+            /* height: 280px;
+            width: 280px; */
+        }
         </style>
 </head>
 <body>
 <div id = "container">
 <div class = "box">Animation</div>
 <div class = "box2">Tranfromation</div>
+<div class = "box3">Transistion</div>
 </div>
 </body>
 </html>
