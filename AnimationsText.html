@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations in Text</title>
+    <style>
+         /*Text Animations*/
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+         }
+         .container{
+            background-image: linear-gradient(rgb(1, 1, 104),rgb(0, 88, 202));
+            height: 100vh;
+         }
+         h1{
+            padding-top: 20px;
+            text-align: center;
+            animation-name: slide;
+            animation-duration: 2s;
+            animation-fill-mode: both;
+            animation-timing-function: ease;
+            animation-iteration-count: 5;
+            color: #fff;
+        }
+        @keyframes slide {
+            from{
+                transform: translateX(-250px);
+            }
+            to{
+                transform: translateX(0);
+            }
+        }
+        h2{
+            text-align: center;
+            animation-name: bounce;
+            animation-duration: 2s;
+            animation-fill-mode: both;
+            animation-timing-function: ease;
+            animation-iteration-count: 5;
+            color: #fff;
+            margin-top: 60px;
+            padding-bottom: 15px;
+
+        }
+        @keyframes bounce{
+            0%{
+                transform: translateY(0);
+            }
+            20%{
+                transform: translateY(0);
+            }
+            40%{
+                transform: translateY(-30px);
+            }
+            50%{
+                transform: translateY(0);
+            }
+            60%{
+                transform: translateY(-15px);
+            }
+            80%{
+                transform: translateY(0);
+            }
+
+            100%{
+                transform: translateY(0);
+            }
+        }
+        h3{
+            color: #fff;
+            text-align: center;
+            animation-name: rotate;
+            animation-timing-function: linear;
+            transform-origin: center; 
+            animation-iteration-count: 5;
+            margin-top: 40px; 
+            animation-duration: 10s;    
+        }
+        @keyframes rotate{
+            from{
+                transform: rotate(0);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Slide Forward</h1>
+    <h2>Bounce!</h2>
+    <h3>Rotatation</h3>
+</div>  
+</body>
+</html>
