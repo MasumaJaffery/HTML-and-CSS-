@@ -22,3 +22,45 @@ flex-flow is combination of 2 properties (flex-direction + flex-wrap) like flex-
  position: relative;
  right: 80px;
 }
+/* CSS Units
+Default font size is 16px on all browsers
+However 16px equals to 1rem 
+em is relative to parent element 
+.container {
+   font-size: 10px;
+}
+#frist{
+font-size: 2em;
+// so it takes 20px in size
+Because em takes the greater space than the parent element like 10 * 2 = 20px
+if we take padding,
+  padding: 2em 
+It's about 2*2*10 = 40px
+//Don't be confused because if the container is 10 or we already set 2em to font size and the padding is 2em too.
+}
+*/
+#CSS_Units .container{
+   height: 50vh;
+   /*100vh veiw port height is 100% height
+    Like 50vh is 50% Same for 100vw Veiw port width is 100% width */
+   background-color: rgb(6, 6, 88);
+   color: #fff;
+   text-align: left;
+   font-size: 1.2rem; 
+   /*rem relative to font size 
+    and rem is relative to root element that is html tag however html default font size is 16px. */
+}
+#CSS_Units .container h3{
+   padding: 1em;
+   /*em unit is amazing for margins, padding and width because,
+    when we assign it to property it relative to its element font size. */
+   text-align: center;
+   margin-bottom: -10px;
+}
+#CSS_Units .container table{
+   width: 50vw;
+   margin-left: 25%;;
+}
+#CSS_Units .container table th, td{
+   border: 2.5px ridge #8280ff;
+}
