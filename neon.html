@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <title>Neon</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:ital,wght@0,400;0,500;1,400&family=Tilt+Neon&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Tilt Neon', cursive;
+    }
+    body{
+        background-color: #18191f;
+        color: #fff;
+        justify-content: center;
+        text-align: center;
+        font-size: 2rem;
+    }
+    h1{
+        padding: 100px;
+        /* offset-x | offset-y | blur-radius | color */
+        text-shadow: 0 0 5px blue,
+        0 0 10px blue,
+        0 0 15px blue,
+        0 0 20px blue,
+        0 0 25px blue;
+    }
+    .fa-face-smile{
+        padding: 10px 70px; /* top/bottom left/right */
+        font-size: 5rem;
+        text-shadow: 0 0 0.5rem yellow,
+        0 0 1rem yellow,
+        0 0 1.5rem yellow,
+        0 0 2rem yellow;
+    }
+    .fa-square-github{
+        font-size: 8em;
+        padding: 10px 20px;
+        background: #18191f;
+        margin: 0 40px;
+        border-radius: 30px;
+        box-shadow: /* 2px 2px 2px #000,
+        10px 10px 12px #000, */
+        /* The inset property sets the distance between an element and the parent element  */
+        inset 2px 2px 10px #000800,  /* top left/right bottom color */
+        inset 2px 2px 10px #000800,
+        inset 2px 2px 10px #000800,
+        inset 2px 2px 10px #000800;
+        text-shadow: 0 0 50px yellow,
+        0 0 100px yellow,
+        0 0 150px yellow,
+        0 0 200px yellow;
+        animation: animate 2s linear infinite;
+       }
+       @keyframes animate {
+        from{
+         filter: hue-rotate(0deg);
+        }
+        to{
+        filter: hue-rotate(360deg);
+        }
+    }
+    </style>
+</head>
+<body>
+    <h1>Neon</h1>
+    <i class="fa-regular fa-face-smile"></i>
+    <i class="fa-brands fa-square-github"></i>
+</html>
